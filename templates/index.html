@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Salary</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <![endif]-->
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    </head>
+<body>
+
+    <h1>This is our salary predictor app</h1>
+    <h2 style="color:#0020ff;">{{ prediction_text }}</h2>
+    <h2>Enter the below values : </h2>
+    <form action="{{ url_for('predict')}}" method="post">
+        <br>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Job Title</label>
+            <input type="text" name="inp1" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Rating of the company</label>
+            <input type="number" name="inp2" class="form-control" step = "0.01" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Company name</label>
+            <input type="text" name="inp3" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Location</label>
+            <input type="text" name="inp4" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Size of the company</label>
+            <input type="text" name="inp4.2" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Type of Ownership</label>
+            <input type="text" name="inp4.1" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Industry</label>
+            <input type="text" name="inp5" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Sector</label>
+            <input type="text" name="inp6" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Revenue</label>
+            <input type="text" name="inp7" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Python</label>
+            <input type="number" name="inp8" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Excel</label>
+            <input type="number" name="inp9" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Hadoop</label>
+            <input type="number" name="inp10" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">Spark</label>
+            <input type="number" name="inp11" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">aws</label>
+            <input type="number" name="inp12" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">tableau</label>
+            <input type="number" name="inp13" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <div class="form-floating mb-3">
+            <label for="floatingInput ">big_data</label>
+            <input type="number" name="inp14" class="form-control" id="floatingInput">
+            <br>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+
+        <br>
+        <br>
+    </form>
+    </div>
+
+</body>
+</html>
